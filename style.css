@@ -1,7 +1,18 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(Triforce.ttf);
+}
+
+body {
+  font-family: myFirstFont;
+  font-size: 3em;
+  color: #148503;
+}
+
 .link {
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 50%;
+  left: 70%;
 }
 
 .ear {
@@ -212,7 +223,7 @@
 
 .arrow {
   position: absolute;
-  top: 60%;
+  top: 70%;
 }
 
 .arrow-stick {
