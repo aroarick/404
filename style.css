@@ -4,15 +4,41 @@
 }
 
 body {
+  color: #e32b17;
+}
+
+.error {
+  font-size: 2em;
+  font-family: "Noto Serif TC";
+  position: absolute;
+  margin: 0;
+  left: 600px;
+  top: 40px;
+}
+
+.dead {
+  font-size: 5em;
   font-family: myFirstFont;
-  font-size: 3em;
-  color: #148503;
+  position: absolute;
+  margin: 0;
+  top: 85px;
+  left: 450px;
+}
+
+.dead-highlight {
+  font-size: 5em;
+  font-family: myFirstFont;
+  margin: 0;
+  color: #e8d3d0;
+  position: absolute;
+  top: 85px;
+  left: 455px;
 }
 
 .link {
   position: absolute;
   top: 50%;
-  left: 70%;
+  left: 30%;
 }
 
 .ear {
@@ -27,7 +53,7 @@ body {
   position: absolute;
   top: 85px;
   left: 80px;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 .hat-bottom-tab {
@@ -37,7 +63,7 @@ body {
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   /* border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px; */
+    border-bottom-left-radius: 10px; */
   transform: rotate(-40deg);
   border: 1px solid black;
   position: absolute;
@@ -248,6 +274,35 @@ body {
 }
 @keyframes movingArrow {
   100% {
-    transform: translateX(475px);
+    transform: translateX(950px);
   }
+}
+
+.sword-handle {
+  width: 10px;
+  height: 30px;
+  background: #804b1d;
+  position: absolute;
+  top: 20px;
+  left: 90px;
+}
+.sword-shaft {
+  width: 50px;
+  height: 20px;
+  background: #aaa9ad;
+  position: absolute;
+  top: 25px;
+  left: 100px;
+}
+.sword-top {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #aaa9ad;
+  transform: rotate(-40deg);
+  position: absolute;
+  transform: rotate(90deg);
+  left: 145px;
+  top: 30px;
 }
