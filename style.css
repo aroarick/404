@@ -1,3 +1,9 @@
+.link {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
 .ear {
   background: #eebb99;
   display: block;
@@ -88,11 +94,13 @@
   top: 23px;
   left: 63px;
   border: 1px solid black;
-  animation: crossEye1 infinite 6s;
+  animation: crossEye1 infinite 2s;
 }
 @keyframes crossEye1 {
   100% {
     transform: rotate(45deg);
+    background-color: red;
+    border: 1px solid red;
   }
 }
 
@@ -104,11 +112,13 @@
   top: 23px;
   left: 63px;
   border: 1px solid black;
-  animation: crossEye2 infinite 6s;
+  animation: crossEye2 infinite 2s;
 }
 @keyframes crossEye2 {
   100% {
     transform: rotate(-45deg);
+    background-color: red;
+    border: 1px solid red;
   }
 }
 
@@ -155,4 +165,78 @@
   position: absolute;
   border: 1px solid black;
   top: 40px;
+}
+
+.foot1 {
+  width: 15px;
+  height: 25px;
+  background: #804b1d;
+  position: absolute;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  top: 90px;
+  transform: rotate(-5deg);
+}
+
+.toes1 {
+  height: 20px;
+  width: 20px;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+  top: 82px;
+  left: 10px;
+  background: #804b1d;
+  transform: rotate(85deg);
+  z-index: -1;
+  border: 1px solid black;
+}
+
+.toes2 {
+  height: 30px;
+  width: 20px;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+  background-color: #804b1d;
+  transform: rotate(85deg);
+  top: 50px;
+  left: 45px;
+  border: 1px solid black;
+}
+
+.arrow {
+  position: absolute;
+  top: 60%;
+}
+
+.arrow-stick {
+  width: 60px;
+  height: 5px;
+  background: #804b1d;
+  /* animation: movingArrow 2s infinite; */
+  position: absolute;
+  top: 20px;
+  z-index: -1;
+}
+
+.arrow-head {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #aaa9ad;
+  /* animation: movingArrow 2s infinite; */
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  z-index: -1;
+}
+@keyframes movingArrow {
+  100% {
+    transform: translateX(475px);
+  }
 }
