@@ -131,9 +131,13 @@ body {
   top: 23px;
   left: 63px;
   border: 1px solid black;
-  animation: crossEye1 forwards 1.5s;
+  animation: crossEye1 infinite 1s;
+  animation-delay: 1s;
 }
 @keyframes crossEye1 {
+  0% {
+    transform: rotate(0deg);
+  }
   100% {
     transform: rotate(45deg);
     background-color: red;
@@ -149,9 +153,13 @@ body {
   top: 23px;
   left: 63px;
   border: 1px solid black;
-  animation: crossEye2 forwards 1.5s;
+  animation: crossEye2 infinite 1s;
+  animation-delay: 1s;
 }
 @keyframes crossEye2 {
+  0% {
+    transform: rotate(0deg);
+  }
   100% {
     transform: rotate(-45deg);
     background-color: red;
@@ -255,26 +263,32 @@ body {
   width: 60px;
   height: 5px;
   background: #804b1d;
-  animation: movingArrow 0.5s forwards linear;
-  animation-iteration-count: 1;
+  animation: movingArrow 1s infinite linear forwards;
+  animation-delay: 1s;
   position: absolute;
   top: 20px;
   z-index: -1;
 }
 
 .arrow-head {
-  animation: movingArrow 0.5s forwards linear;
+  animation: movingArrow 1s infinite linear forwards;
+  animation-delay: 1s;
   width: 20px;
   height: 15px;
   background-color: #aaa9ad;
   clip-path: polygon(0 0, 0% 100%, 100% 50%);
-  animation-iteration-count: 1;
   position: absolute;
   top: 15px;
   left: 50px;
   z-index: -1;
 }
 @keyframes movingArrow {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(400px);
+  }
   100% {
     transform: translateX(400px);
   }
